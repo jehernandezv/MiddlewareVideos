@@ -58,15 +58,11 @@ app.post('/addVideo', function (req, res, next){
     //console.log(file);
 
 
-  setInterval(() => {
+
     subscriber(email, file).catch(error => {
       console.error(error)
       process.exit(1)
     })
-  },1000);
-
-   
-
     res.json({
         'message' : 'ha llegado el email'
     });
