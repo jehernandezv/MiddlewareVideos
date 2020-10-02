@@ -55,7 +55,7 @@ app.post('/addVideo', function (req, res, next){
     const email = data.body.email;
     const file = data.file;
     //console.log(email);
-    //console.log(file);
+    console.log(file);
 
 
 
